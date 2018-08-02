@@ -677,9 +677,6 @@
 	                      
 	                      if (val < options.date[other]) {
 	                        // second range click < first
-	                        options.date[1] = options.date[0] + 86399000;  // starting date + 1 day
-	                        options.date[0] = val - 86399000;  // minus 1 day
-
 	                        options.date[second] = options.date[first] + 86399000;  // starting date + 1 day
 	                        options.date[first] = val - 86399000;  // minus 1 day
 	                      } else {
